@@ -303,14 +303,14 @@ d3.tsv("data/kittler_gruen_4.txt", function (error, data) {
         })
         .text(function (d) { return d.data.type; });
 
-        /*
+    /*
 
-    svg.append("g")
-        .attr("transform", "translate(" + (0) + "," + 20 + ")")
-        .append("text")
-        .text("Mimetypes der Dateien")
-        .attr("class", "title")
-        */
+svg.append("g")
+    .attr("transform", "translate(" + (0) + "," + 20 + ")")
+    .append("text")
+    .text("Mimetypes der Dateien")
+    .attr("class", "title")
+    */
 
 
     //////////////////////////// MimeType Bar Chart
@@ -472,12 +472,12 @@ d3.tsv("data/kittler_gruen_4.txt", function (error, data) {
         })
         .text(function (d) { return d.data.type; });
 
- /*   svg.append("g")
-        .attr("transform", "translate(" + (0) + "," + 20 + ")")
-        .append("text")
-        .text("Quellen der Dateien")
-        .attr("class", "title")
-        */
+    /*   svg.append("g")
+           .attr("transform", "translate(" + (0) + "," + 20 + ")")
+           .append("text")
+           .text("Quellen der Dateien")
+           .attr("class", "title")
+           */
 
 
     //////////////////////////// Group Bar Chart
@@ -540,7 +540,7 @@ function timeoutTree(year) {
     window.d3 = null;
     d3 = d3version6;
     console.log("------------ d3 version -----------");
-    console.log(d3.version);
+    //console.log(d3.version);
     setTimeout(() => {
         treeNew(year)
     }, "5000")

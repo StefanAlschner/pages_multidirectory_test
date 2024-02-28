@@ -552,7 +552,7 @@ function timeoutTimeline(id, datum) {
     window.d3 = null;
     d3 = d3version3;
     console.log("------------ d3 version -----------");
-    console.log(d3.version);
+    //console.log(d3.version);
     // include timeline.js
     $.getScript("d3-timeline.js", function () { });
     // delete old timeline
